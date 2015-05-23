@@ -37,7 +37,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/outqast/overlays/common
 # Needed Packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    libsepol
+    libsepol \
+    viper4android
 
 # Enable sip+voip on all targets
 PRODUCT_COPY_FILES += \
