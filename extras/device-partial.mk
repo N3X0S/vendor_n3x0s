@@ -5,4 +5,5 @@ PRODUCT_COPY_FILES += \
     vendor/outqast/extras/supersu/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 PRODUCT_PACKAGES += \
-    AdAway 
+    AdAway \
+    Viper4Android
