@@ -2,7 +2,7 @@
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Inherit common product files
-$(call inherit-product, vendor/outqast/configs/common.mk)
+$(call inherit-product, vendor/outqastNXT/configs/common.mk)
 
 # Setup device specific product configuration
 PRODUCT_NAME := outqast_n6
