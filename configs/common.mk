@@ -2,7 +2,7 @@
 PRODUCT_BRAND ?= outqast
 
 # Local path for prebuilts
-LOCAL_PATH:= vendor/outqastNXT/prebuilts/common/system
+LOCAL_PATH:= vendor/outqast/prebuilts/common/system
 
 # Common build prop overrides 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -32,13 +32,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
      
 # Common overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/outqastNXT/overlays/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/outqast/overlays/common
 
 # Needed Packages
 PRODUCT_PACKAGES += \
     Launcher3 \
     libsepol \
-    viper4android
+    Viper4Android
 
 # Enable sip+voip on all targets
 PRODUCT_COPY_FILES += \
@@ -62,7 +62,7 @@ PRODUCT_COPY_FILES += \
 # Bootanimation support
 ifeq (outqast_n6,$(TARGET_PRODUCT))
 PRODUCT_COPY_FILES += \
-    vendor/outqastNXT/prebuilts/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/outqast/prebuilts/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip
 endif
 
     
@@ -156,4 +156,4 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/xbin/sepolicy-inject:system/xbin/sepolicy-inject
 
 # Inherit common extras
-$(call inherit-product, vendor/outqastNXT/extras/device-partial.mk)
+$(call inherit-product, vendor/outqast/extras/device-partial.mk)
