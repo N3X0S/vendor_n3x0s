@@ -134,6 +134,10 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/media/audio/ui/VideoStop.ogg:system/media/audio/ui/VideoStop.ogg \
         $(LOCAL_PATH)/media/audio/ui/WirelessChargingStarted.ogg:system/media/audio/ui/WirelessChargingStarted.ogg
         
+# Audio effects
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/etc/audio_effects.conf:/system/etc/audio_effects.conf	
+
 # APNs
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/apns-conf.xml:/system/etc/apns-conf.xml
