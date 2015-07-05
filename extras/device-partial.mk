@@ -7,6 +7,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AdAway \
     Viper4Android \
-    LayersManager \
     BetterBatteryStats \
     SlimLauncher
