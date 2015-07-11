@@ -1,4 +1,4 @@
 #!/system/bin/sh
 
-/system/bin/tc add dev rmnet_data0 root fq_codel
-/system/bin/tc add dev wlan0 root fq_codel
+/system/bin/tc add dev rmnet_data0 root cake
+/system/bin/tc add dev wlan0 root cake
