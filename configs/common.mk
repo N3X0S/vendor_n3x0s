@@ -1,8 +1,8 @@
 # Brand
-PRODUCT_BRAND ?= outqast
+PRODUCT_BRAND ?= n3x0s
 
 # Local path for prebuilts
-LOCAL_PATH:= vendor/outqast/prebuilts/common/system
+LOCAL_PATH:= vendor/n3x0s/prebuilts/common/system
 
 # Common build prop overrides 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -32,7 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
      
 # Common overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/outqast/overlays/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/n3x0s/overlays/common
 
 # Needed Packages
 PRODUCT_PACKAGES += \
@@ -60,9 +60,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh
 
 # Bootanimation support
-ifeq (outqast_n6,$(TARGET_PRODUCT))
+ifeq (n3x0s_n6,$(TARGET_PRODUCT))
 PRODUCT_COPY_FILES += \
-    vendor/outqast/prebuilts/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/n3x0s/prebuilts/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip
 endif
 
     
@@ -160,4 +160,4 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/xbin/sepolicy-inject:system/xbin/sepolicy-inject
 
 # Inherit common extras
-$(call inherit-product, vendor/outqast/extras/device-partial.mk)
+$(call inherit-product, vendor/n3x0s/extras/device-partial.mk)

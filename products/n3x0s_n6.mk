@@ -2,10 +2,10 @@
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Inherit common product files
-$(call inherit-product, vendor/outqast/configs/common.mk)
+$(call inherit-product, vendor/n3x0s/configs/common.mk)
 
 # Setup device specific product configuration
-PRODUCT_NAME := exsanguination_n6
+PRODUCT_NAME := n3x0s_n6
 PRODUCT_DEVICE := shamu
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6
