@@ -9,4 +9,5 @@ PRODUCT_PACKAGES += \
     AdAway \
     Viper4Android \
     BetterBatteryStats \
-    SlimLauncher
+    SlimLauncher \
+    Exchange2
