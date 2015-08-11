@@ -1,4 +1,5 @@
 #!/system/bin/sh
 
-/system/bin/tc add dev rmnet_data0 root cake
-/system/bin/tc add dev wlan0 root cake
+/system/bin/tc qdisc add dev rmnet_data0 root cake
+/system/bin/tc qdisc add dev rmnet_usb0 root cake
+/system/bin/tc qdisc add dev wlan0 root cake
